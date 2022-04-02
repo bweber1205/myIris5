@@ -7,13 +7,13 @@
 <body>
 
 <div class="ui container", style="margin-top:50px">
-  <h1>Iris Species Prediction</h1>
-  <p>Based on the data you provided the prediction is:</p>
+  <h1>Iris Species Classification</h1>
+  <p>Based on the data you provided the classification is:</p>
   <div class="row justify-content-md-center">
        <div class="ui small image", style="text-align: center">
             {% if prediction_result == 0 %}
                 <img src="{{url_for('static', filename='iris_setosa.jpg')}}" class="img-thumbnail"/>
-                <p> Prediction is Iris Setosa </p>
+                <p> Classification is Iris Setosa </p>
             {% endif %}
         </div>
     </div>
@@ -22,7 +22,7 @@
         <div class="ui small image", style="text-align: center">
             {% if prediction_result == 1 %}
                 <img src="{{url_for('static', filename='iris_versicolor.jpg')}}" class="img-thumbnail" />
-                <p> Prediction is Iris Versicolor </p>
+                <p> Classification is Iris Versicolor </p>
             {% endif %}
         </div>
     </div>
@@ -31,7 +31,7 @@
         <div class="ui small image", style="text-align: center">
             {% if prediction_result == 2 %}
                 <img src="{{url_for('static', filename='iris_virginica.jpg')}}" class="img-thumbnail" />
-                <p> Prediction is Iris Virginica </p>
+                <p> Classification is Iris Virginica </p>
             {% endif %}
         </div>
     </div>
